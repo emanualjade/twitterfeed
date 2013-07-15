@@ -1,0 +1,133 @@
+body{
+	width: 600px;
+	margin: 40px auto;
+	font: 16px/26px Helvetica, Helvetica Neue, Arial;
+}
+.header-container {
+	margin-bottom: 50px;
+}
+nav ul{
+	list-style: none;
+	padding: 0;
+	margin-left: -1%;
+}
+
+nav li{
+	display: inline-block;
+	margin-left: 1%;
+	width: 18.39999%;
+}
+nav a {
+	color: #fff;
+	padding: 3px 0;
+	border: 1px solid #242424;
+	border-radius: 4px;
+	-webkit-transition: all .3s;
+	background: #474747;
+	font-size: 15px;
+	display: block;
+	text-align: center;
+	text-decoration: none;
+}
+nav a:hover{
+	background: #CD5C5C;
+	color: #fff;
+	border: 1px solid #BD4F4F;
+}
+
+h1{
+	font-size: 19px;
+}
+
+article{
+	border: 1px solid #ccc;
+	padding: 20px 30px;
+	border-radius: 4px;
+/*	max-height: 600px;
+	overflow: scroll;*/
+}
+input{
+	box-sizing: border-box;
+	width: 100%;
+	height: 35px;
+	border-radius: 5px;
+	border: 1px solid #C5C5C5;
+	background: #F5F5F5;
+	outline: none;
+	-webkit-transition: all .3s;
+	font-size: 14px;
+	color: #666666;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+input:focus{
+	background: #fff;
+}
+.tweets{
+	list-style: none;
+	padding: 0;
+	margin-top: 40px;
+	margin-bottom: 0;
+}
+.tweets li{
+	padding: 15px;
+	border-bottom: 1px solid #EBEBEB;
+}
+.tweets li:last-child{
+	border-bottom: none;
+}
+.tweets li p{
+	margin: 0;
+	overflow: hidden;
+	zoom: 1;
+}
+.tweets li:hover{
+	background: #F5F5F5;
+	cursor: pointer;
+}
+.tweets li.single{
+	display: none;
+}
+.tweets .tweet-body{
+	overflow: hidden;
+	zoom: 1;
+}
+.tweets .img{
+	float: left;
+	padding-right: 1em;
+}
+.tweets a{
+	text-decoration: none;
+}
+.tweets a:hover{
+	text-decoration: underline;
+}
+.tweets .expand {
+	color: blue;
+	font-size: 12px;
+	text-align: right;
+}
+.tweets .expand:hover{
+	text-decoration: underline;
+} 
+.tweets .media{
+	display: none;
+}
+.tweets .media img{
+	margin-top: 10px;
+	max-width: 100%;
+}
+/*Helpers*/
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
