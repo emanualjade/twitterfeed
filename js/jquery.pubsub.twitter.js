@@ -67,7 +67,6 @@
         data: self.request,
         success: function(data, textStatus, xhr){
           if (data.httpstatus == 200) {
-            console.log(data)
             self.tweets = $.map(data.statuses, function(tweet){
               var media_url;
               if (tweet.entities['media']) { 

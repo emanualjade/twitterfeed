@@ -17,10 +17,16 @@ $cb = Codebird::getInstance();
 $cb->setToken($ACCESS_TOKEN, $ACCESS_TOKEN_SECRET);
 
 
-//retrieve posts
-$q = $_POST['q'];
-$count = $_POST['count'];
-$api = $_POST['api'];
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+  $q = $_POST['q'];
+  $count = $_POST['count'];
+  $api = $_POST['api'];
+}else{
+  $q = $_GET['q'];
+  $count = $_GET['count'];
+  $api = $_GET['api'];
+}
+
 
 //https://dev.twitter.com/docs/api/1.1/get/statuses/user_timeline
 //https://dev.twitter.com/docs/api/1.1/get/search/tweets

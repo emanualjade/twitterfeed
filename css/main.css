@@ -63,7 +63,7 @@ input{
 input:focus{
 	background: #fff;
 }
-.tweets{
+.tweets, .tweets ol{
 	list-style: none;
 	padding: 0;
 	margin-top: 40px;
